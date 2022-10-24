@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garaza Info</title>
+    <link rel="stylesheet" href="garazaStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html#oNama">O NAMA</a>
+                </li>
+                <li>
+                    <a href="garaza.html">GARAZA</a>
+                </li>
+                <li>
+                    <a href="aktuelno.html">AKTUELNO</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="index.html" style="position:absolute; margin-left:50%; top:8%;">
+            <img src="images/promenada.png" style="height:4rem; width:auto; position: absolute; margin-left: 50%; transform:translateX(-68%)">
+        </a>
+        <nav>
+            <ul style="position:absolute; top:0; right:15px; transform:translateX(-100%); padding:0; margin:0;">
+                <li style="margin:0; margin-top:50%; transform:translateY(-110%)">
+                    <a href="https://www.instagram.com/promenada.novisad/" target="_blank">
+                        <img src="images/instagram.png" style="height: 50px; width:auto;">
+                    </a>
+                </li>
+                <li style="margin-right:20px; margin-left:10px; margin-top:50%; transform:translateY(-110%);">
+                    <a href="https://www.facebook.com/promenadanovisad" target="_blank">
+                        <img src="images/facebook.png" style="height: 50px; width:auto">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="parking">
+        <canvas id="canvas">
+        </canvas>
+    </div>
+    <div id="info">
+        <p id="ukupno">Ukupno mesta:</p>
+        <p id="ovajSprat">Mesta na ovom spratu:</p>
+        <input type="button" onclick="SwitchParkingView(-1)" value="<">
+        <p id="current" style="min-width:none;">1</p>
+        <input type="button" onclick="SwitchParkingView(1)" value=">">
+    </div>
+    <script src="garaza.js"></script>
+</body>
+
+</html>
